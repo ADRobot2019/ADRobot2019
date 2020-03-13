@@ -1,12 +1,31 @@
 ## Paper: 사용자 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing personalized advertisements)
 
 #
-## Used Embedded board
-* Odroid H2
-* Arduino Mega2560
+## Robot Appearance
+![fig 2 Robot appearance_copy](https://user-images.githubusercontent.com/62131182/76616839-482af380-6568-11ea-9436-bbef9b91e156.jpg)
 
 ## Robot Specification
-*   
+* Main Board
+   * Odroid H2
+* Micro controller
+   * Arduino Mega2580
+* Distance measurement sensors
+   * HC-SR04 Ultrasonic(5EA)
+   * Infrared(1EA)
+* Image sensor
+   * OcamS-1CGN-U
+* HRI media
+   * Speaker: Britz BA-BR9 Soundbar
+   * Monitor: ECO GD220LED HDMI SLIM
+* Omni-wheel driving modules
+   * 12V DC Coreless motor X3
+   * DCMD-50-D Motor driver X3
+   * 48mm omni wheel X3
+* Communication
+   * WiFi module
+* Battery
+   * DC12V/2.6Ah(3.7V/2600mA*3ea)X2
+   * DC12V/5.2Ah(3.7V/2600mA*6ea) 
 
 
 ## How to Start main.py(Advertisement service) 
