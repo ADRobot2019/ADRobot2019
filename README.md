@@ -5,6 +5,19 @@
 * Odroid H2
 * Arduino Mega2560
 
+## How to Start main.py 
+* Requirements
+    * install MS Azure Face API
+          
+          $sudo pip install cognitive_face
+          $sudo apt install imagemagick -y
+    * Reference
+           
+          https://blog.naver.com/ljy9378/221463790053
+ * Start main.py
+    
+        $python main.py
+      
 ## ROS Libarary install on Arduino
 * rosserial install for Arduino
    * http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
@@ -45,7 +58,8 @@
        $rostopic pub -r 15 /byu_control geometry_msgs/Transform ‘[translation: [translation(x),translation(y), translation(z)], rotation: [rotation(x), rotation(y), rotation(z), w]’
 
 4. Robot driving Example
-    
-       $roscore
-       $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1
-       $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 0]}'
+    * Open three terminals and type the following commands in order for each terminal.
+        
+          $roscore
+          $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1
+          $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 0]}'
