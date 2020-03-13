@@ -1,18 +1,6 @@
-# Team: ByU
-
-Project: Open-source robot platform providing personalized advertisements
+## Project: Open-source robot platform providing personalized advertisements
 
 #
-## ROBOT H/W Architecture
-![HW구성도](https://user-images.githubusercontent.com/37207332/75628129-6c5a0c80-5c19-11ea-8be5-8316deee991d.JPG)
-
-## ROBOT Design
-![image](https://user-images.githubusercontent.com/47591345/61575355-8c631280-ab05-11e9-90cc-bf82d24123f8.png)
-
-![image](https://user-images.githubusercontent.com/47591345/61575357-8ec56c80-ab05-11e9-9171-4bb98a8593ec.png)
-
-![image](https://user-images.githubusercontent.com/47591345/61575358-908f3000-ab05-11e9-9f82-68f0aa7aebd4.png)
- 
 ## Used Embedded board
 * Odroid H2
 * Arduino Mega2560
