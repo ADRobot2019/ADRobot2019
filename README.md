@@ -1,6 +1,5 @@
 ## Paper: 사용자 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing personalized advertisements)
 
-#
 ## Robot Appearance
 ![fig 2 Robot appearance_copy](https://user-images.githubusercontent.com/62131182/76616839-482af380-6568-11ea-9436-bbef9b91e156.jpg)
 
