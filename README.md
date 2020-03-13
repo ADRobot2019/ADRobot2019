@@ -7,16 +7,17 @@
 
 ## How to Start main.py 
 * Requirements
-    * install MS Azure Face API
+    * Register an account with MS Azure cognitive services 
+    * Install MS Azure Face API
           
           $sudo pip install cognitive_face
           $sudo apt install imagemagick -y
-    * Reference
-           
-          https://blog.naver.com/ljy9378/221463790053
+            
+            * Reference: https://blog.naver.com/ljy9378/221463790053
+ * Modify Key and Base_url in main.py
  * Start main.py
-    
-        $python main.py
+       
+       $python main.py
       
 ## ROS Libarary install on Arduino
 * rosserial install for Arduino
