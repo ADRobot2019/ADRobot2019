@@ -29,11 +29,11 @@
 
 1. Omni_Robot.ino file upload on Arduino Mega
 
-2. Start ROS Master & rosserial
+2. Start ROS Master
  
         $roscore
 
-3. connect Arduino Mega and odroid H2(Master) to rosserial
+3. Connect Arduino Mega and Odroid H2(Master) to rosserial
    
         $rosrun rosserial_python serial_node.py _port:=/dev/serial_port_file(=ttyACM#,#:serial_port_number)
    * Example 
