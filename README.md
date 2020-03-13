@@ -45,4 +45,4 @@
     
        $roscore
        $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0
-       $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 1.0]}'
+       $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 0]}'
