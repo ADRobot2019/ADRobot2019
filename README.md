@@ -25,24 +25,27 @@
          $rm -rf ros_lib
          $rosrun rosserial_arduino make_libraries.py .
 
-* Start ROS Master & rosserial
-      
-         $roscore
-         $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0
+## How to drive a robot
 
-## How to Robot control
+1. Omni_Robot.ino file upload on Arduino Mega
 
-1. byu_robot_mode_add.ino file upload on Arduino Mega
+2. Start ROS Master & rosserial
+ 
+        $roscore
 
-2. connect Arduino Mega and odroid H2(Master) to rosserial
+3. connect Arduino Mega and odroid H2(Master) to rosserial
    
-      * rosrun rosserial_python serial_node.py _port:=/dev/serial_port_file(=ttyACM#,#:serial_port_number)
+        $rosrun rosserial_python serial_node.py _port:=/dev/serial_port_file(=ttyACM#,#:serial_port_number)
+   * Example 
+       
+         $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1
 
 3. robot control ros command
 
        $rostopic pub -r 15 /byu_control geometry_msgs/Transform ‘[translation: [translation(x),translation(y), translation(z)], rotation: [rotation(x), rotation(y), rotation(z), w]’
-4. Example
+
+4. Robot driving Example
     
        $roscore
-       $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0
+       $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1
        $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 0]}'
