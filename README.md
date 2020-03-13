@@ -1,4 +1,4 @@
-## Project: Open-source robot platform providing personalized advertisements
+## Paper: 사용자 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing personalized advertisements)
 
 #
 ## Used Embedded board
