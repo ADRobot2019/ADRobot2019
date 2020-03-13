@@ -5,7 +5,11 @@
 * Odroid H2
 * Arduino Mega2560
 
-## How to Start main.py 
+## Robot Specification
+*   
+
+
+## How to Start main.py(Advertisement service) 
 * Requirements
     * Register an account with MS Azure cognitive services 
     * Install MS Azure Face API
