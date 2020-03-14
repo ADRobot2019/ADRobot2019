@@ -5,9 +5,9 @@
 ![fig 2 Robot appearance_copy](https://user-images.githubusercontent.com/62131182/76616839-482af380-6568-11ea-9436-bbef9b91e156.jpg)
 
 ## Robot Specifications
-|Type|Description|
-|:---|:---|
-|Main Board|- Odroid H2|
+|  <center>Type</center>  |  <center>Description</center>  |
+|--------|---------|
+|Main Board |- Odroid H2 |
 | Micro controller|- Arduino Mega2580|
 |Distance measurement sensors|- HC-SR04 Ultrasonic X5 <br> - Infrared |
 |Image sensor|- OcamS-1CGN-U|
