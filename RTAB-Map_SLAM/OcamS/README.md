@@ -1,8 +1,6 @@
 # oCamS-1CGN-U - USB 3.0 Stereo Camera - [(Korean)](Product/oCamS-1CGN-U/Korean/README.md)
 ### Model No. oCamS-1CGN-U - sales website
 
-![ScreenShot](/images/oCamS-1CGN-U.png)
-
 ## Features
 *	ROS Compatibility: Provides compatibility with ROS (Robot Operating System) to utilize rich and powerful functionalities of ROS
 *	Rich Data: Provides IMU data from the built-in sensors along with stereo images, which allows development of easy and useful applications
