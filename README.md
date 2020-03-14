@@ -1,5 +1,5 @@
 ## Paper: 사용자 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing personalized advertisements)
-### 자세한 내용은 논문을 참고하시길 바랍니다.(Please refer to the thesis for more information.)
+### 자세한 내용은 논문을 참고하시길 바랍니다.(Please refer to the paper for more information.)
 
 ## Robot Appearance
 ![fig 2 Robot appearance_copy](https://user-images.githubusercontent.com/62131182/76616839-482af380-6568-11ea-9436-bbef9b91e156.jpg)
