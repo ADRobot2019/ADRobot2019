@@ -15,7 +15,7 @@
 |Omni-wheel driving modules|- 12V DC Coreless motor X3 <br> - DCMD-50-D Motor driver X3 <br> - 48mm omni wheel X3 |
 |Communication|- WiFi module|
 |Battery|- DC12V/2.6Ah(3.7V/2600mA*3ea) X2 <br> - DC12V/5.2Ah(3.7V/2600mA*6ea)|
-|Size| - Height x Widht: 1.2m x 0.35m <br> - Depth(Head x Body x Bottom diameter): 0.1m x 0.1m x 0.32m|
+|Size| - Height x Width: 1.2m x 0.35m <br> - Depth(Head x Body x Bottom diameter): 0.1m x 0.1m x 0.32m|
 
 
 ## How to Start main.py(Advertisement service) 
