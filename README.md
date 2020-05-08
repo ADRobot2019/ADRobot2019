@@ -1,4 +1,4 @@
-## Paper: 사용자 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing personalized advertisements)
+## Paper: 오프라인 맞춤형 광고 제공을 위한 오픈소스 로봇 플랫폼(Open-source robot platform providing offline personalized advertisements)
 ### 자세한 내용은 논문을 참고하시길 바랍니다.(Please refer to the paper for more information.)
 
 ## Robot Appearance
