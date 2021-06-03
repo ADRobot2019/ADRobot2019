@@ -6,7 +6,7 @@
 #include <MatrixMath.h>
 #include <math.h>
 #include <ros.h>
-#include <geometry_msgs/Transform.h>
+#include <geometry_msgs/Twist.h>
 
 //Baudrate
 #define BAUDRATE1 9600
@@ -66,8 +66,6 @@ bool IR_sensor_check = false;
 #define  MAX_SPEEDRPM 8000 //최대 속도RPM
 #define  MAX_PWM 255  //PWM 값
 
-enum Mode { AVOIDANCE_MODE = 1, FORWARD_MODE, CIRCLE_MODE, RECT_MDOE, COMMAND_MODE };
-
 // 변수 선언부
 // Motor Speed, DIR
 float back_wheel_speed, right_wheel_speed, left_wheel_speed;
@@ -123,9 +121,9 @@ float side_decay_rate = 0.7; // 좌,우 이동 후 반대로 이동 시 속도 �
 
 int front_check = 0;
 
-float forward_speed_max = 150; // recommand 100
-float side_speed_max = 150;    // recommand 150
-float turn_speed_max = 0.7;    // recommand 0.5
+float forward_speed_max = 1.0;
+float side_speed_max = 1.0;    
+float turn_speed_max = 0.7;    
 
 int front_delay = 100;
 int uturn_delay = 2000; //ms
@@ -137,24 +135,24 @@ int front_stay_time = 20; //전방 정지 감지시간
 //// ros 선언 부////
 ros::NodeHandle nh;
 
-void Byu_Cb(const geometry_msgs::Transform& byu_val) // 명령 값 받아서 byu robot 제어
+void Byu_Cb(const geometry_msgs::Twist& byu_val) // 명령 값 받아서 byu robot 제어
 {
-  motor_forward_speed = byu_val.translation.x;
+  motor_forward_speed = byu_val.Twist.x;
   if (motor_forward_speed > forward_speed_max) motor_forward_speed = forward_speed_max;
   motor_forward_speed = -motor_forward_speed;
 
-  motor_moveTosideR_speed = byu_val.translation.y;
+  motor_moveTosideR_speed = byu_val.Twist.y;
   if (motor_moveTosideR_speed > side_speed_max) motor_moveTosideR_speed = side_speed_max;
   motor_moveTosideL_speed = -motor_moveTosideR_speed;
 
-  motor_turnR_speed = byu_val.rotation.z;
+  motor_turnR_speed = byu_val.Twist.z;
   if (motor_turnR_speed > turn_speed_max) motor_turnR_speed = turn_speed_max;
   motor_turnL_speed = -motor_turnR_speed;
 
   start_robot = true;
 }
 
-ros::Subscriber<geometry_msgs::Transform> sub("/byu_control", Byu_Cb); //제어값받음
+ros::Subscriber<geometry_msgs::Twist> sub("/byu_control", Byu_Cb); //제어값받음
 
 //////////////////////////////////////
 
@@ -430,3 +428,4 @@ void loop() {
   }
 
 }
+
