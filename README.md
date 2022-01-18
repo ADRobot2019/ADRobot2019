@@ -2,7 +2,7 @@
 ##### Journal of Convergence for Information Technology Vol. 10. No. 4, pp. 1-10, 2020
 ##### DOI : https://doi.org/10.22156/CS4SMB.2020.10.04.001
 #### 자세한 내용은 논문을 참고하시길 바랍니다.(Please refer to the paper for more information.)
-* 논문에 옴니휠 제어 코드에 오류가 있습니다. geometry_msgs/Transform을 geometry_msgs/Twist로 변경하여 사용하시길 바랍니다.
+* 논문에 옴니휠 제어 코드에 오류가 있습니다. geometry_msgs/Transform을 geometry_msgs/Twist로 변경하였습니다.
 #
 
 ## Robot Appearance
@@ -73,11 +73,27 @@
 
 3. robot control ros command
 
-       $rostopic pub -r 15 /byu_control geometry_msgs/Transform ‘[translation: [translation(x),translation(y), translation(z)], rotation: [rotation(x), rotation(y), rotation(z), w]’
+       $rostopic pub -r 15 /byu_control geometry_msgs/Twist 
+         "linear:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+          angular:
+          x: 0.0
+          y: 0.0
+          z: 0.0"
 
 4. Robot driving Example
     * Open three terminals and type the following commands in order for each terminal.
         
           $roscore
           $rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1
-          $rostopic pub -r 15 /byu_control geometry_msgs/Transform '{translation: [150, 150, 0], rotation: [0, 0, 0.5, 0]}'
+          $rostopic pub -r 15 /byu_control geometry_msgs/Twist 
+            "linear:
+             x: 1.0
+             y: 1.0
+             z: 0.0
+             angular:
+             x: 0.0
+             y: 0.0
+             z: 0.5"
